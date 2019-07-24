@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Cities App</string>
+    <string name="please_wait">Please wait</string>
+    <string name="unable_to_detect_connectivity">Unable to detect internet connectivity</string>
+    <string name="lets_explore">Let\'s explore</string>
+    <string name="city_uf">UF</string>
+    <string name="city_code">Code</string>
+    <string name="city_name">City name</string>
+    <string name="edit_city">Edit city</string>
+    <string name="inform_new_city_data">Please update the city record you have selected</string>
+    <string name="updated">City has been updated sucessfully in local database</string>
+    <string name="fetching_data">Fetching data from remote server</string>
 </resources>

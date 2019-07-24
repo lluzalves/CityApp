@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/animation_list_splash"
+                android:oneshot="false">
+    <item
+            android:drawable="@drawable/ic_map"
+            android:duration="450" />
+    <item
+            android:drawable="@drawable/ic_edit_location"
+            android:duration="450" />
+    <item
+            android:drawable="@drawable/ic_near_me_black_24dp"
+            android:duration="450" />
+</animation-list>

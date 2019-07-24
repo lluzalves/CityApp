@@ -1,21 +1,16 @@
-package com.daniel.data.persistence
+package com.app.daniel.app.data.persistence
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import androidx.room.TypeConverters
-import com.daniel.data.entity.customer.CustomerEntity
 import com.app.daniel.app.data.entity.cities.CityEntity
-import com.daniel.data.entity.product.ProductEntity
+import com.app.daniel.app.data.persistence.dao.CityDao
 
-@Database(entities = [CustomerEntity::class, CityEntity::class, ProductEntity::class], version = 1)
-@TypeConverters(CityEntity.ProductConverter::class)
+@Database(entities = [CityEntity::class], version = 1)
 abstract class AppDatabase : RoomDatabase() {
 
-    abstract val customerDao: CustomerDao
-    abstract val orderDao: OrderDao
-    abstract val productDao : ProductDao
+    abstract val cityDao: CityDao
 
     companion object {
         var INSTANCE: AppDatabase? = null
